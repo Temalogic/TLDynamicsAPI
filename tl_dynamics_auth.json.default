@@ -1,0 +1,7 @@
+{
+  "tenant": "domain.onmicrosoft.com",
+  "client_id": "xxxxx-xxxx-xxxx-xxxx-xxxxxx",
+  "username": "name@domain.onmicrosoft.com",
+  "password": "password",
+  "resource": "https://myresource.sandbox.ax.dynamics.com"
+}
