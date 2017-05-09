@@ -1,0 +1,3 @@
+*.log
+tl_auth_token_data.json
+tl_dynamics_auth.json
