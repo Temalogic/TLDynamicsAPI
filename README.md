@@ -5,9 +5,9 @@
 This class handles authentication against
 Microsofts [Dynamics 365](https://msdn.microsoft.com/en-us/library/mt593051.aspx?f=255&MSPPError=-2147217396) aka [AX7](https://msdn.microsoft.com/en-us/library/mt593051.aspx?f=255&MSPPError=-2147217396) by using the *grant_type "password"*. It also contains methods to make requests against an [Odata 4.0](http://www.odata.org/documentation/) api, which is what Dynamics 365 uses. The class should only be used as a starting point, **It DOES NOT fully implement the [Odata 4.0](http://www.odata.org/documentation/) standard**.
 
-### Authenication
+### Authentication
 
-**The class can only be used with correct authenication details. There are three ways that authenication can be supplied:**
+**The class can only be used with correct authentication details. There are three ways that authentication can be supplied:**
 
 * (Easiest) Create a file called **tl_dynamics_auth.json** in the same folder as the **TLDynamicsAPI.php** file. Then just use the class by ```new TLDynamicsAPI()```
 
@@ -37,7 +37,7 @@ Microsofts [Dynamics 365](https://msdn.microsoft.com/en-us/library/mt593051.aspx
 
 ### Make requests
 
-When authenication is successful a file called **tl_auth_token_data.json** will be created in the same directory as the **TLDynamicsAPI.php**. The file will contain access- and refresh token that will be used to make requests. If something goes wrong with the request or authenication an **TLDynamicException** will be throwed.
+When authentication is successful a file called **tl_auth_token_data.json** will be created in the same directory as the **TLDynamicsAPI.php**. The file will contain access- and refresh token that will be used to make requests. If something goes wrong with the request or authentication an **TLDynamicException** will be throwed.
 
 Example code:
 
@@ -78,6 +78,6 @@ catch(Exception $e){
 ```
 
 
-### Documenation
+### Documentation
 
-The code is documented by following the [phpdoc](https://phpdoc.org/) standard. Follow the [install instructions](https://phpdoc.org/docs/latest/getting-started/installing.html) to install phpdoc. Then you can generate documentaion by following [this guide](https://phpdoc.org/docs/latest/getting-started/your-first-set-of-documentation.html#running-phpdocumentor)
+The code is documented according to the [phpdoc](https://phpdoc.org/) standard. Follow the [install instructions](https://phpdoc.org/docs/latest/getting-started/installing.html) to install phpdoc. Then you can generate documentation by following [this guide](https://phpdoc.org/docs/latest/getting-started/your-first-set-of-documentation.html#running-phpdocumentor)
